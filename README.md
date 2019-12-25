@@ -25,7 +25,7 @@
 ```
 
 
-![picture](images/static_lv.png) 
+![picture](images/static_lv.jpeg) 
 
 
 
@@ -39,12 +39,12 @@
 ```
 
 
-![picture](images/recycler_lv.png) 
+![picture](images/recycler_lv.jpeg) 
 
 
 
 
-![picture](images/scroll_horizontal.png) 
+![picture](images/scroll_horizontal.jpeg) 
 
 
 
@@ -58,7 +58,7 @@
 ```
 
 
-![picture](images/grid_lv.png) 
+![picture](images/grid_lv.jpeg) 
 
 
 

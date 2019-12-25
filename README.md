@@ -58,7 +58,7 @@
 ```
 
 
-![picture](images/grid_lv.jpeg) 
+![picture](images/grid.jpeg) 
 
 
 

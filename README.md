@@ -64,6 +64,7 @@
 
 ```
 
+
 #Button Desings
 
 
@@ -71,3 +72,16 @@
 
 
 ![picture](images/buttondesigns.png) 
+
+
+
+```
+
+
+#Stackview
+
+
+```
+
+
+![picture](images/stackview.png) 

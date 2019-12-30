@@ -116,12 +116,12 @@
 
 
 
-![picture](images/lolli_shot1.png)
+![picture](images/lolli_shot2.png)
 
 
 
-![picture](images/lolli_shot1.png)
+![picture](images/lolli_shot3.png)
 
 
 
-![picture](images/lolli_shot1.png)
+![picture](images/lolli_shot4.png)

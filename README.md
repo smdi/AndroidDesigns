@@ -106,10 +106,11 @@
 ```
 
 
-#lollipop Progressbar
+#lollipop Progressbar at 0% 25% 50% 100% 
 
 
 ```
+
 
 
 ![picture](images/lolli_shot1.png)

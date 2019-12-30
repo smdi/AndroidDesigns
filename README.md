@@ -112,4 +112,16 @@
 ```
 
 
-![picture](images/lollipopprogressbar.png)
+![picture](images/lolli_shot1.png)
+
+
+
+![picture](images/lolli_shot1.png)
+
+
+
+![picture](images/lolli_shot1.png)
+
+
+
+![picture](images/lolli_shot1.png)

@@ -1,9 +1,14 @@
 package aidev.com.androiddesigns;
 
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.res.ColorStateList;
 import android.graphics.Path;
+import android.graphics.drawable.ClipDrawable;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.RippleDrawable;
 import android.os.Build;
 import android.os.Handler;
@@ -24,24 +29,61 @@ import java.util.ArrayList;
 
 public class design extends AppCompatActivity {
 
-    private ImageView img;
-    private Animation roration;
+    public ImageView img,bck;
+    public int mLevel = 0;
+    public Drawable imgDrawable;
+    public Handler handler;
+    private Runnable animateImage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_design);
 
 
+        initializer();
+
+    }
+
+    @SuppressLint("ResourceType")
+    private void initializer() {
         img = (ImageView) findViewById(R.id.lollipop);
-        roration = new RotateAnimation(0f,350f,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
-
-        roration.setDuration(10000);               // duration in ms
-        roration.setRepeatCount(-1);                // -1 = infinite repeated
-        roration.setRepeatMode(Animation.REVERSE); // reverses each repeat
-        roration.setFillAfter(true);
-
-        img.setAnimation(roration);
+        bck = (ImageView) findViewById(R.id.backlollipop);
 
 
+
+        imgDrawable =  img.getBackground();
+
+        if (imgDrawable instanceof ClipDrawable) {
+            ((ClipDrawable)imgDrawable).setLevel(imgDrawable.getLevel() + 2000);
+        }
+        handler = new Handler();
+        handler.post(animateImage);
+
+
+        animaterHandler(0);
+
+    }
+
+    private void animaterHandler(final long time) {
+        handler = new Handler();
+        handler.postDelayed(animateImage =new Runnable() {
+            @Override
+            public void run() {
+                doTheAnimation();
+                handler.postDelayed(this,time);
+            }
+        }, time);
+    }
+
+    private void doTheAnimation() {
+        mLevel += 2000;
+
+        if (mLevel <= 10000) {
+            imgDrawable.setLevel(mLevel);
+        } else {
+            mLevel = 0;
+            imgDrawable.setLevel(mLevel);
+        }
     }
 }

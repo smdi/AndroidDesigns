@@ -109,6 +109,7 @@
 #lollipop Progressbar at 0% 25% 50% 100% 
 
 
+
 ```
 
 
@@ -126,3 +127,19 @@
 
 
 ![picture](images/lolli_shot4.png)
+
+
+
+
+```
+
+
+#Modern Bottom Navigation bar
+
+
+
+```
+
+
+
+![picture](images/bottom_nav.png)
